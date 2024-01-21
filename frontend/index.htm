@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <main class="conteudoPagina">
+      <h1>Gerenciamento de tarefas</h1>
+      <form>
+        <label for="tarefa">Crie uma nova tarefa</label>
+          <input type="text" id="titulo" class="inputTarefa"/>
+          <input type="text" id="descricao" class="inputTarefa"/>
+          <input type="text" id="status" class="inputTarefa"/>
+        <button class="btnNovaTarefa" id="criar">+</button>
+      </form>
+      <h2>Tarefas</h2>
+      <ul class="tarefas">
+      </ul>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
+</html>

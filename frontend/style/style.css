@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.conteudoPagina{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btnNovaTarefa{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+button{
+    border-radius: 0.5rem;
+}
+
+input{
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+}
+li{
+    background-color: yellowgreen;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;    
+    width: 15rem;
+    height: 10rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+span{
+    text-align: end;
+}
