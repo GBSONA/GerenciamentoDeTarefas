@@ -10,16 +10,62 @@
     <main class="conteudoPagina">
       <h1>Gerenciamento de tarefas</h1>
       <form>
-        <label for="tarefa">Crie uma nova tarefa</label>
-          <input type="text" id="titulo" class="inputTarefa"/>
-          <input type="text" id="descricao" class="inputTarefa"/>
-          <input type="text" id="status" class="inputTarefa"/>
-        <button class="btnNovaTarefa" id="criar">+</button>
+        <label>Crie uma nova tarefa</label>
+        <input
+          type="text"
+          id="titulo"
+          class="inputTarefa"
+          placeholder="Tarefa que irá fazer"
+        />
+        <input
+          type="text"
+          id="descricao"
+          class="inputTarefa"
+          placeholder="Detalhes da tarefa"
+        />
+        <button class="btnNovaTarefa" id="criar">Adicionar tarefa</button>
       </form>
-      <h2>Tarefas</h2>
+      <input
+        type="text"
+        name=""
+        class="pesquisar"
+        id=""
+        placeholder="Pesquisar"
+      />
+      <div class="filtro">
+        <h3>Ordernar por:</h3>
+        <select class="filtros">
+          <option value="" class="filtroOp">Todas</option>
+          <option value="A concluir" class="filtroOp">A concluir</option>
+          <option value="Concluído" class="filtroOp">Concluído</option>
+        </select>
+      </div>
+      <h3>Tarefas</h3>
       <ul class="tarefas">
+
       </ul>
     </main>
+    <div class="modal-container">
+      <div class="modal">
+        <div class="sModal">
+          <h1>Atualizar tarefa</h1>
+          <label for="tituloModal">Título:</label>
+          <input type="text" class="tagsModal" id="tituloModal" />
+          <label for="descricaoModal">Descrição:</label>
+          <input type="text" class="tagsModal" id="descricaoModal" />
+          <label for="statusModal">Status:</label>
+          <select class="tagsModal" id="statusModal">
+            <option value="A concluir">A concluir</option>
+            <option value="Concluído">Concluído</option>
+          </select>
+        </div>
+        <div class="sModal">
+          <button onclick="closeModal()" class="atualizarModal">Salvar</button>
+          <button onclick="closeModal()">Fechar</button>
+        </div>
+      </div>
+    </div>
+
     <script src="script/script.js"></script>
   </body>
 </html>
